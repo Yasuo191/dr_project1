@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dự Án Responsive CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 20px; 
+            padding: 20px;
+        }
+
+        .content-block {
+            width: 95%; 
+            box-sizing: border-box;
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .content-block h3 {
+            color: #007bff;
+        }
+
+        .content-block img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            object-fit: cover; 
+        }
+
+        @media (min-width: 772px) {
+            .content-block {
+                width: 45%; 
+            }
+
+            .content-block img {
+                max-height: 30vh; 
+            }
+        }
+
+        @media (min-width: 998px) {
+            .content-block {
+                width: 30%; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Thiết Kế Responsive Với Điểm Chuyển Tiếp</h1>
+        <p>Thử thay đổi kích thước cửa sổ trình duyệt để xem các bố cục thay đổi.</p>
+    </header>
+
+    <div class="container">
+        <div class="content-block">
+            <h3>Mục 1: Thông tin Sản phẩm</h3>
+            <img src="https://placehold.co/400x300/1e88e5/ffffff?text=Mục+1" alt="Placeholder Small Screen">
+            <p>Đây là mô tả tóm tắt cho sản phẩm hoặc dịch vụ thứ nhất. Nội dung này sẽ tự động thay đổi bố cục tùy theo kích thước màn hình.</p>
+        </div>
+
+        <div class="content-block">
+            <h3>Mục 2: Tính năng Nổi bật</h3>
+            <img src="https://placehold.co/400x300/43a047/ffffff?text=Mục+2" alt="Placeholder Tablet Screen">
+            <p>Nội dung chi tiết hơn về các tính năng. Bố cục sẽ chuyển sang hiển thị hai cột khi màn hình đạt 772px.</p>
+        </div>
+
+        <div class="content-block">
+            <h3>Mục 3: Đánh giá Khách hàng</h3>
+            <img src="https://placehold.co/400x300/fbc02d/ffffff?text=Mục+3" alt="Placeholder Two Columns">
+            <p>Phần này chứa các đánh giá quan trọng từ người dùng. Thiết kế responsive đảm bảo trải nghiệm đọc tốt nhất.</p>
+        </div>
+        
+        <div class="content-block">
+            <h3>Mục 4: Chi tiết Dịch vụ</h3>
+            <img src="https://placehold.co/400x300/e91e63/ffffff?text=Mục+4" alt="Placeholder Large Screen">
+            <p>Thông tin về các gói dịch vụ. Bố cục sẽ chuyển sang ba cột khi màn hình đạt 998px.</p>
+        </div>
+        
+        <div class="content-block">
+            <h3>Mục 5: Liên hệ & Hỗ trợ</h3>
+            <img src="https://placehold.co/400x300/7b1fa2/ffffff?text=Mục+5" alt="Placeholder Three Columns">
+            <p>Thông tin liên hệ và các kênh hỗ trợ. Thiết kế này tối ưu hóa không gian hiển thị trên màn hình lớn.</p>
+        </div>
+        
+        <div class="content-block">
+            <h3>Mục 6: Chính sách Chung</h3>
+            <img src="https://placehold.co/400x300/00bcd4/ffffff?text=Mục+6" alt="Placeholder Final Check">
+            <p>Nội dung cuối cùng. Toàn bộ trang web đã được tối ưu hóa theo cách tiếp cận Mobile-First.</p>
+        </div>
+    </div>
+
+</body>
+</html>
